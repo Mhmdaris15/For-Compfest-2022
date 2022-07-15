@@ -11,13 +11,15 @@ int main()
     {
         cin >> scores[i];
     };
-    sort(scores, scores + n);
-    int min = scores[n - k];
+    sort(scores, scores + n); // sort the scores in ascending order
+    int min = scores[n - k];  // the minimum score of the last k students
     int promoted = 0;
     while (promoted < n && scores[n - 1 - promoted] > 0 && scores[n - 1 - promoted] >= min)
     {
+        cout << scores[n - 1 - promoted] << ' ';
         ++promoted;
     };
-    cout << promoted << endl;
+    cout << "\n"
+         << promoted << endl;
     return 0;
 }
