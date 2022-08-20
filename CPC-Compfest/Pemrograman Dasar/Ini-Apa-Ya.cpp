@@ -21,6 +21,5 @@ int main()
     {
         cout << "bilangan bulat positif" << endl;
     }
-
     return 0;
 }
